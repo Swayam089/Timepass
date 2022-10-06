@@ -33,14 +33,14 @@
                     <input type="text" id="Email"><br><br>
                     <label class="Password" for="Password">Password</label><br>
                     <input type="password" id="password"><br><br>
-                    <input type="button" value="Submit" id="Button"
-                        onclick="alert('Welcome ' + document.getElementById('Fname').value  )">
+                    <input type="button" value="Submit" id="Button">
                 </form>
             </div>
         </center>
         <script>
             document.getElementById("Button").onclick = function () {
-                location.href = "https://www.google.com";
+                alert('Welcome ' + document.getElementById('Fname').value + ' '+ document.getElementById('Lname'))
+                location.href = "https://swayam089.github.io/Timepass/";
             };
         </script>
 </body>
