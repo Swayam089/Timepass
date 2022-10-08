@@ -10,37 +10,39 @@
 </head>
 
 <body>
-    <h1>Login/Sign in</h1>
+    <center><table>
+        <tr>
+            <td>
+                <img src="favicon.png" width="50">
+            </td>
+            <td><h1>Book Suggestions</h1></td>
+        </tr>
+    </table></center>
+    <nav><a id="navbtn" href="Fiction.html">Fiction</a><a id="navbtn" href="Non-fiction.html">Non - Fiction</a><a id="navbtn" href="mystry.html">MYSTERY</a><a id="navbtn" href="index.html">Home</a></nav>
     <div class="myDiv">
         <h2>Please Fill the fields </h2>
         <p>We will require the data incase the orders and more inquiry</p>
         <center>
             <div class="form">
                 <form>
-                    <label class="Fname" for="Fname" id="fname">First Name</label><br>
-                    <input type="text" id="Fname"><br><br>
-                    <label class="Lname" for="Lname">Last name</label><br>
-                    <input type="text" id="Lname"><br><br>
-                    <label class="Grade" for="Grade">Grade</label><br>
-                    <input type="text" id="Grade"><br><br>
-                    <label class="Section" for="Section">Section</label><br>
-                    <input type="text" id="Section"><br><br>
-                    <label class="gender" for="gender">gender</label><br>
-                    <input type="radio" id="gender">Male
-                    <input type="radio" id="gender">Female<br>Other:-
-                    <input type="text" id="gender"><br><br>
-                    <label class="email" for="email">Email</label><br>
-                    <input type="text" id="Email"><br><br>
-                    <label class="Password" for="Password">Password</label><br>
-                    <input type="password" id="password"><br><br>
-                    <input type="button" value="Submit" id="Button">
+                    <label class="Author" for="Author" id="author">Author</label><br>
+                    <input type="text" id="Author"><br><br>
+                    <label class="Book-Name" for="Book-Name">Book Name</label><br>
+                    <input type="text" id="BookName"><br><br>
+                    <label class="Genre" for="Genre">Genre</label><br>
+                    <input type="text" id="Genre"><br><br>
+                    <label class="DATE" for="DATE">Date of publication</label><br>
+                    <input type="text" id="Date"><br><br>
+                    <label class="Number" for="Number">Number of Pages</label><br>
+                    <input type="text" id="Number"><br><br>
+                    <input type="button" value="Sumbit" id="Button">
                 </form>
             </div>
         </center>
         <script>
             document.getElementById("Button").onclick = function () {
-                alert('Welcome ' + document.getElementById('Fname').value + ' '+ document.getElementById('Lname'))
-                location.href = "https://swayam089.github.io/Timepass/";
+                alert('You have Requested For Book of ' + document.getElementById('Number').value + ' Pages from the Author ' + document.getElementById('Author').value + ' and the Books name is ' + document.getElementById('BookName').value + ' and it was published in ' + document.getElementById('Date').value + ' Thank you for the Suggestion we will surely look after this request :)')
+                location.href =' https://swayam089.github.io/Timepass/';
             };
         </script>
 </body>
